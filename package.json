@@ -1,0 +1,17 @@
+{
+  "name": "hapi-api-rest",
+  "version": "1.0.0",
+  "description": "simple example api rest with hapi",
+  "main": "index.js",
+  "keywords": [
+    "api",
+    "rest",
+    "hapi"
+  ],
+  "author": "Tony133",
+  "license": "MIT",
+  "dependencies": {
+    "hapi": "^16.6.2",
+    "mongoose": "^4.12.4"
+  }
+}
