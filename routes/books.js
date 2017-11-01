@@ -1,6 +1,7 @@
 'use strict';
 
 const Book = require('../models/book');
+const Joi = require('joi');
 
 exports.register = function(server, options, next) {
 
@@ -50,7 +51,15 @@ exports.register = function(server, options, next) {
 							});
           });
 
-      }
+      },
+			config: {
+					validate: {
+							payload: Joi.object({
+									title: Joi.string().min(3).max(20),
+									price: Joi.number()
+							})
+					}
+			}
 	});
 
 	server.route({
@@ -74,6 +83,14 @@ exports.register = function(server, options, next) {
 
               });
           });
+			},
+			config: {
+					validate: {
+							payload: Joi.object({
+									title: Joi.string().min(3).max(20),
+									price: Joi.number()
+							})
+					}
 			}
 	});
 
