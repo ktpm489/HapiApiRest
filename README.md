@@ -1,4 +1,7 @@
 # HapiApiRest
+
+[![Build Status](https://travis-ci.org/Tony133/HapiApiRest.svg?branch=master)](https://travis-ci.org/Tony133/HapiApiRest)
+
 Simple Example Api Rest with Hapi JS and mongodb
 
 ## Run app
