@@ -10,6 +10,10 @@
   ],
   "author": "Tony133",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tony133/HapiApiRest"
+  },
   "dependencies": {
     "hapi": "^16.6.2",
     "joi": "^13.0.1",
